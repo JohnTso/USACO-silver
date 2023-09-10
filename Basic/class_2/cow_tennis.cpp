@@ -35,7 +35,7 @@ int main() {
   }
   sort(cows.begin(), cows.end());
 
-  double total = 0;
+  unsigned total = 0;
   for (int i=0; i<n-2; ++i) {
     for (int j=i+1; j<n; ++j) {
       int dis = cows[j]-cows[i];
