@@ -45,5 +45,5 @@ int main() {
       total += upper_bound - lower_bound + 1;
     }
   }
-  cout << total << endl;
+  cout << fixed << setprecision(0) << total << endl;
 }

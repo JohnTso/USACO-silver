@@ -1,15 +1,17 @@
-#include <iostream>
-#include <bits/stdc++.h>
-#include <fstream>
 #include <string>
+#include <fstream>
+#include <iostream>
 
 using namespace std;
 
-int main () {
-  
-  ifstream f ("input.txt");
-  char c;
-  while (getline(f, line)) {
+int main()
+{
 
+  string line = "";
+  ifstream f("input.txt");
+
+  while (getline(f, line)) {
+    cout << line << endl;
   }
- }
+
+}
