@@ -5,26 +5,21 @@
 using namespace std;
 
 int main () {
-  ifstream f ("input.txt");
 
+  ifstream f ("input.txt");
   int n; f >> n;
   vector<int> line;
-  int count = 1, ;
-  char n,end;
-  for (int i =0; i<n ; ++i) {
-    f >> n >> end;
-    if (n == 'A') {
-      if (end == 'L') {
-        line.push_front(count);
-      } else {
-        line.push_back(count);
-      }
+  int count=0;
+
+  for (int i=0;i<n;++i){
+    char c; f >> c;
+    char dir; f >> dir;
+
+    if (c == 'D') {
+      int k; f >> k;
     } else {
-      if (end == 'L') {
-        line.pop_front();
-      } else {
-        line.pop();
-      }
+
     }
+
   }
 }
